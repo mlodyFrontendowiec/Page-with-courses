@@ -18,7 +18,7 @@ const StoreProvider = ({ children }) => {
   }, []);
 
   return (
-    <StoreContext.Provider value={(courses, setCourses, user, setUser)}>
+    <StoreContext.Provider value={{ courses, setCourses, user, setUser }}>
       {children}
     </StoreContext.Provider>
   );

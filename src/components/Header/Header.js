@@ -1,12 +1,22 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import block from "bem-css-modules";
 
 import { StoreContext } from "../../store/StoreProvider";
-
-import "../css/style.css";
+import LoginForm from "../LoginFrom/LoginForm";
 
 const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const { user, setUser } = useContext(StoreContext);
+
+  const handleOnClose = () => setIsModalOpen(false);
+
+  const handleOnClick = () => {
+    if (Boolean(user)) {
+      setUser(null);
+    } else {
+      setIsModalOpen(true);
+    }
+  };
 
   const setProperlyLabel = Boolean(user) ? "Wyloguj się" : "Zaloguj się";
 
@@ -14,7 +24,8 @@ const Header = () => {
     <header className="header">
       <div className="header__logo-wrapper" />
       <h1 className="header__title">Super kursy dla programistów</h1>
-      <button> {setProperlyLabel}</button>
+      <button onClick={handleOnClick}> {setProperlyLabel}</button>
+      <LoginForm handleOnClose={handleOnClose} isModalOpen={isModalOpen} />
     </header>
   );
 };
