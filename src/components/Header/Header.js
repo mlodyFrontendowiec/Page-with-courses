@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import block from "bem-css-modules";
 
 import { StoreContext } from "../../store/StoreProvider";
 import LoginForm from "../LoginFrom/LoginForm";
