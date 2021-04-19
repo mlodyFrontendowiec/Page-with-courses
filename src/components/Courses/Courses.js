@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { StoreContext } from "../../store/StoreProvider";
-import Course from "./subcomponents/Course";
+import Course from "../Course/Course";
 
 const Courses = () => {
   const { courses } = useContext(StoreContext);

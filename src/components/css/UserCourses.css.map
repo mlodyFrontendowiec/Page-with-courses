@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,SAAS,EAAE,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CAWvB;;AATE,AAAD,oBAAQ,CAAC;EACP,UAAU,EAAE,MAAM;EAClB,aAAa,EAAE,IAAI;CACpB;;AACA,AAAD,mBAAO,CAAC;EACN,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAc;EACrC,GAAG,EAAE,IAAI;CACV",
+    "sources": [
+        "../UserCourses/UserCourses.scss"
+    ],
+    "names": [],
+    "file": "UserCourses.css"
+}
