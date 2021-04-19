@@ -102,6 +102,71 @@
   background-color: #f00;
 }
 
+.content {
+  margin: 0 auto;
+  padding: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 1366px;
+}
+
+.course-card {
+  margin-bottom: 20px;
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.course-card__title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.course-card__image {
+  width: 100%;
+  height: auto;
+}
+
+.course-card__price, .course-card__authors {
+  margin: 10px 0 0 15px;
+}
+
+.courses {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.courses__title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.courses__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 55px;
+  padding: 50px;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

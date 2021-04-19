@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import "./css/style.css";
 import { HashRouter as Router } from "react-router-dom";
 import AsideMenu from "./components/AsideMenu/AsideMenu";
+import Content from "./components/Content/Content";
 
 function App() {
   const context = useContext(StoreContext);
@@ -14,6 +15,7 @@ function App() {
       <Router>
         <div className="content-wrapper">
           <AsideMenu />
+          <Content />
         </div>
       </Router>
     </StoreProvider>
