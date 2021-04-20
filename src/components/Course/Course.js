@@ -23,8 +23,6 @@ const Course = ({ authors, img, price, title, id, isUserContext = false }) => {
         setUser(data.user);
         history.push("/my-courses");
       }
-      console.log(isUserLogged);
-      console.log(isUserContext);
     } catch (err) {
       console.warn(err);
     }

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Redirect, Route, Switch } from "react-router";
 import { StoreContext } from "../../store/StoreProvider";
+import AdminPanel from "../AdminPanel/AdminPanel";
 import Courses from "../Courses/Courses";
 import UserCourses from "../UserCourses/UserCourses";
 
@@ -20,11 +21,7 @@ const Content = () => {
           <Route path="/my-courses" exact render={() => <UserCourses />} />
         )}
         {isAdmin && (
-          <Route
-            exact
-            path="/manage-courses"
-            render={() => <p>Zarządzanie kursami</p>}
-          />
+          <Route exact path="/manage-courses" render={() => <AdminPanel />} />
         )}
         <Redirect to="/" />
       </Switch>
