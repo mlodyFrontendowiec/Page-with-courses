@@ -75,11 +75,11 @@ const CoursePopup = ({
     </li>
   ));
 
-  const correctLabel = isEditMode ? "Aktualizuj kurs" : "Utwórz kurs";
+  const correctLabel = isEditMode ? "Update course" : "Create course";
 
   return (
     <Modal handleOnClose={hidePopup} isOpen={isOpenPopup}>
-      <div className="course-popup">
+      <div className="course-popup" style={{ padding: "50px" }}>
         <form
           className="course-popup__form"
           method="submit"
@@ -87,24 +87,24 @@ const CoursePopup = ({
         >
           <div className="course-popup__form-row">
             <label>
-              Autor:
+              Author:
               <input
                 type="text"
                 value={formAuthor}
                 onChange={handleOnChangeAuthor}
               />
-              <button onClick={addAuthor}>Dodaj autora</button>
+              <button onClick={addAuthor}>Add author</button>
             </label>
           </div>
           <div className="course-popup__form-row">
             <label>
-              Obrazek url:
+              Image url:
               <input type="text" value={formImg} onChange={handleOnChangeImg} />
             </label>
           </div>
           <div className="course-popup__form-row">
             <label>
-              Cena:
+              Price:
               <input
                 type="text"
                 type="number"
@@ -115,7 +115,7 @@ const CoursePopup = ({
           </div>
           <div className="course-popup__form-row">
             <label>
-              Tytuł:
+              Title:
               <input
                 type="text"
                 value={formTitle}
@@ -126,10 +126,10 @@ const CoursePopup = ({
 
           <button type="submit">{correctLabel}</button>
           <button onClick={hidePopup} type="button">
-            Anuluj
+            Cancel
           </button>
         </form>
-        <p>Lista autorów:</p>
+        <p>List of authors:</p>
         <ul>{authorsElements}</ul>
       </div>
     </Modal>

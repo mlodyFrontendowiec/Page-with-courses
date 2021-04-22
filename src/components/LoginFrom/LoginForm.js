@@ -52,7 +52,10 @@ const LoginForm = ({ handleOnClose, isModalOpen }) => {
     >
       {validateMessage}
       <form className="login-form" method="post" onSubmit={handleOnSubmit}>
-        <div className="row">
+        <div
+          className="row"
+          style={{ display: "flex", justifyContent: "flex-end" }}
+        >
           <label>
             Login:
             <input onChange={handleOnChangeLogin} type="text" value={login} />
@@ -68,7 +71,7 @@ const LoginForm = ({ handleOnClose, isModalOpen }) => {
             />
           </label>
         </div>
-        <div className="row">
+        <div className="row" style={{ marginTop: "10px" }}>
           <button type="submit">Sign In</button>
           <button onClick={handleOnClose} type="button">
             Cancel
