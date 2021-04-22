@@ -13,7 +13,7 @@ const UserCourses = () => {
 
   return (
     <section className="user-courses">
-      <h2 className="user-courses__title">Twoje wykupione kursy</h2>
+      <h2 className="user-courses__title">Your Courses</h2>
       <ul className="user-courses__list">{buyedCourses}</ul>
     </section>
   );

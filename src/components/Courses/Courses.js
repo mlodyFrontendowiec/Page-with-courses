@@ -11,7 +11,7 @@ const Courses = () => {
 
   return (
     <section className="courses">
-      <h2 className="courses__title">Aktualne kursy</h2>
+      <h2 className="courses__title">Courses</h2>
       <div className="courses__list">{coursesElement}</div>
     </section>
   );

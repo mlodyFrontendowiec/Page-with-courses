@@ -3,11 +3,16 @@ import { Link } from "react-router-dom";
 
 const AdminMenu = () => (
   <>
-    <p className="aside-menu__title">Panel Administratora</p>
+    <p className="aside-menu__title">Admin panel</p>
     <nav>
       <ul>
         <li className="aside-menu__link">
-          <Link to="/manage-courses">Zarządzanie kursami</Link>
+          <Link
+            to="/manage-courses"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            Courses management
+          </Link>
         </li>
       </ul>
     </nav>

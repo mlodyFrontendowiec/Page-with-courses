@@ -31,8 +31,8 @@ const CourseDetails = (props) => {
   return (
     <details>
       <summary>{title}</summary>
-      <button onClick={showPopup}>Edytuj</button>
-      <button onClick={handleDeleteCourse}>Usuń</button>
+      <button onClick={showPopup}>Edit</button>
+      <button onClick={handleDeleteCourse}>Remove</button>
       <CoursePopup hidePopup={hidePopup} isOpenPopup={isOpenPopup} {...props} />
     </details>
   );

@@ -22,7 +22,7 @@ const AdminPanel = () => {
   return (
     <section>
       {coursesElements}
-      <button onClick={showPopup}>Dodaj nowy kurs</button>
+      <button onClick={showPopup}>Add new course</button>
       <CoursePopup
         isOpenPopup={isOpenPopup}
         hidePopup={hidePopup}

@@ -60,7 +60,7 @@ const LoginForm = ({ handleOnClose, isModalOpen }) => {
         </div>
         <div className="login-form__row">
           <label>
-            Hasło:
+            Password:
             <input
               onChange={handleOnChangePassword}
               type="password"
@@ -69,9 +69,9 @@ const LoginForm = ({ handleOnClose, isModalOpen }) => {
           </label>
         </div>
         <div className="row">
-          <button type="submit">Zaloguj</button>
+          <button type="submit">Sign In</button>
           <button onClick={handleOnClose} type="button">
-            Anuluj
+            Cancel
           </button>
         </div>
       </form>

@@ -17,13 +17,16 @@ const Header = () => {
     }
   };
 
-  const setProperlyLabel = Boolean(user) ? "Wyloguj się" : "Zaloguj się";
+  const setProperlyLabel = Boolean(user) ? "Log out" : "Sign In";
 
   return (
     <header className="header">
       <div className="header__logo-wrapper" />
-      <h1 className="header__title">Super kursy dla programistów</h1>
-      <button onClick={handleOnClick}> {setProperlyLabel}</button>
+      <h1 className="header__title">Great courses for developers</h1>
+      <button className="header__button" onClick={handleOnClick}>
+        {" "}
+        {setProperlyLabel}
+      </button>
       <LoginForm handleOnClose={handleOnClose} isModalOpen={isModalOpen} />
     </header>
   );
